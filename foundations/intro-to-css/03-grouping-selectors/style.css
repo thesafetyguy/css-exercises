@@ -7,7 +7,7 @@
     background-color: yellow;
 }
 
-.clickme .nome {
+.clickme, .nome {
     font-size: 28px;
     font-family: Helvetica, "Times New Roman", sans-serif;
 }
