@@ -20,9 +20,13 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
 }
 
-.icon {
+.modal__icon {
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -33,9 +37,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
-.close-button {
+.modal__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__header-text {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.modal__header-button {
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -50,19 +72,23 @@ body {
   padding: 0;
 }
 
+.modal__content-text {
+
+}
+
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
 }
 
-button.continue {
+.modal__buttons-continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
 }
 
-button.cancel {
+.modal__buttons-cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
